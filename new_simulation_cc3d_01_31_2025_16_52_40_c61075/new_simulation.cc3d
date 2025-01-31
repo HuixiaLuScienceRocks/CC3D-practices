@@ -1,0 +1,5 @@
+<Simulation version="4.1.0">
+   <XMLScript Type="XMLScript">Simulation/CellSortDemoLecture3.xml</XMLScript>
+   <PythonScript Type="PythonScript">Simulation/CellSortDemoLecture3.py</PythonScript>
+   <Resource Type="Python">Simulation/CellSortDemoLecture3Steppables.py</Resource>
+</Simulation>
