@@ -1,0 +1,5 @@
+<Simulation version="4.6.0">
+   <XMLScript Type="XMLScript">Simulation/Exercise_2_Cell_Growth.xml</XMLScript>
+   <PythonScript Type="PythonScript">Simulation/Exercise_2_Cell_Growth.py</PythonScript>
+   <Resource Type="Python">Simulation/Exercise_2_Cell_GrowthSteppables.py</Resource>
+</Simulation>
