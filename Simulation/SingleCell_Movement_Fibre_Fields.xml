@@ -1,0 +1,81 @@
+<CompuCell3D Revision="2" Version="4.5.0">
+   
+   <Metadata>
+      <NumberOfProcessors>1</NumberOfProcessors>
+      <DebugOutputFrequency>10</DebugOutputFrequency>
+   </Metadata>
+   
+   <Potts>
+      <Dimensions x="200" y="100" z="1"/>
+      <Steps>10001</Steps> 
+      <Temperature>10.0</Temperature>
+      <NeighborOrder>1</NeighborOrder>
+      <Boundary_x>Periodic</Boundary_x>
+      <Boundary_y>Periodic</Boundary_y>
+   </Potts>
+   
+   <Plugin Name="CellType">
+      <CellType TypeId="0" TypeName="Medium"/>
+      <CellType TypeId="1" TypeName="Cell"/>
+   </Plugin>
+
+   
+   <Plugin Name="Volume">
+      <VolumeEnergyParameters CellType="Cell" LambdaVolume="2.0" TargetVolume="50"/>
+   </Plugin>
+   
+   <Plugin Name="ExternalPotential">
+   </Plugin>
+   
+   <Plugin Name="CenterOfMass">
+   </Plugin>
+   
+   <Plugin Name="NeighborTracker">
+   </Plugin>
+   
+   <Plugin Name="Secretion">
+   <Field Name="ECM_Field">
+   </Field>
+   </Plugin>
+
+   <Plugin Name="Chemotaxis">
+   <ChemicalField Name="ECM_Field">
+   </ChemicalField>
+   </Plugin>
+
+   <Plugin Name="PixelTracker">
+   <TrackMedium/>
+   </Plugin>
+   
+   <Plugin Name="Contact">
+      <Energy Type1="Medium" Type2="Medium">10.0</Energy>
+      <Energy Type1="Medium" Type2="Cell">10.0</Energy>
+      <Energy Type1="Cell" Type2="Cell">10.0</Energy>
+      <NeighborOrder>4</NeighborOrder>
+   </Plugin>
+   
+  <Steppable Type="DiffusionSolverFE">
+   
+   <DiffusionField Name="ECM_Field">
+      <DiffusionData>
+         <FieldName>ECM_Field</FieldName>
+         <GlobalDiffusionConstant>0.0</GlobalDiffusionConstant>
+         <GlobalDecayConstant>0.0</GlobalDecayConstant>
+      </DiffusionData>
+      <SecretionData>
+      </SecretionData>
+      <BoundaryConditions>
+         <Plane Axis="X">
+         </Plane>
+         <Plane Axis="Y">
+         </Plane>
+      </BoundaryConditions>
+   </DiffusionField>
+   <DiffusionField Name="ECM_Field_Angle">
+   </DiffusionField>
+   <DiffusionField Name="ECM_Field_FibreNumber">
+   </DiffusionField>
+   
+</Steppable>
+
+</CompuCell3D>

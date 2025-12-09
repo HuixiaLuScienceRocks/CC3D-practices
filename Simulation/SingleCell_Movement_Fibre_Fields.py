@@ -1,0 +1,8 @@
+
+from cc3d import CompuCellSetup
+
+from SingleCell_Movement_Fibre_FieldsSteppables import SingleCell_Movement_Fibre_FieldsSteppable
+
+CompuCellSetup.register_steppable(steppable=SingleCell_Movement_Fibre_FieldsSteppable(frequency=1))
+
+CompuCellSetup.run()
