@@ -1,5 +1,0 @@
-<Simulation version="4.5.0">
-   <XMLScript Type="XMLScript">Simulation/SingleCell_Movement_Fibre_Fields.xml</XMLScript>
-   <PythonScript Type="PythonScript">Simulation/SingleCell_Movement_Fibre_Fields.py</PythonScript>
-   <Resource Type="Python">Simulation/SingleCell_Movement_Fibre_FieldsSteppables.py</Resource>
-</Simulation>
