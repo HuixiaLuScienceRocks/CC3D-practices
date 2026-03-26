@@ -1,4 +1,8 @@
 # Installing CC3D in UBUNTU24.04.3
+
+Install Miniconda/Anaconda: If not installed, download the Linux installer from Miniconda.
+
+
 ```
 conda create -n cc3d_460 python=3.10
 ```
