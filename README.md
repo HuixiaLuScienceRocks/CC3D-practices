@@ -1,12 +1,26 @@
 # Installing CC3D in UBUNTU24.04.3
-
+```
 conda create -n cc3d_460 python=3.10
-
+```
+```
 conda activate cc3d_460
+```
+```
 conda install -c conda-forge mamba=2.1.1
+```
+
+```
 mamba install -c main -c conda-forge -c compucell3d compucell3d=4.6.0
+```
+
+```
 python -m cc3d.player5
+```
+
+```
 conda deactivate
+```
+
 
 I) In the folder of "new_simulation_cc3d_01_31_2025_16_52_4.."
 1. Folder new_simulation_cc3d_01_31_2025_16_52_40_c61075 is about CellSort
