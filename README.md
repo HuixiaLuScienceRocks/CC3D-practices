@@ -17,6 +17,8 @@ conda install -c conda-forge mamba=2.1.1
 mamba install -c main -c conda-forge -c compucell3d compucell3d=4.6.0
 ```
 
+Open CC3D:
+
 ```
 python -m cc3d.player5
 ```
